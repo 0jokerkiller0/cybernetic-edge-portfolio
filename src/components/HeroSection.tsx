@@ -83,7 +83,7 @@ const HeroSection = () => {
               <div className="w-72 h-72 md:w-80 md:h-80 rounded-lg border-glow overflow-hidden bg-muted relative">
                 {/* Actual profile image */}
                 <img
-                  src="/sushant-profile-pic.png"
+                  src="./sushant-profile-pic.png"
                   alt="Sushant Telrandhe"
                   className="w-full h-full object-cover"
                 />
