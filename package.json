@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://0jokerkiller0.github.io/My-Portfolio-Sushant-Telrandhe/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
@@ -85,4 +84,3 @@
     "vite": "^7.2.7"
   }
 }
-
