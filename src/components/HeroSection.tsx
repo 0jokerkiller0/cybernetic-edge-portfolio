@@ -81,16 +81,13 @@ const HeroSection = () => {
             {/* Profile image frame */}
             <div className="relative">
               <div className="w-72 h-72 md:w-80 md:h-80 rounded-lg border-glow overflow-hidden bg-muted relative">
-                {/* Placeholder avatar with cyber aesthetic */}
-                <div className="w-full h-full bg-gradient-to-br from-muted to-background flex items-center justify-center">
-                  <div className="text-center space-y-2">
-                    <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-primary/30 to-accent/30 flex items-center justify-center">
-                      <span className="font-mono text-4xl text-primary">
-                        ST
-                      </span>
-                    </div>
-                  </div>
-                </div>
+                {/* Actual profile image */}
+                <img
+                  src="/sushant-profile-pic.png"
+                  alt="Sushant Telrandhe"
+                  className="w-full h-full object-cover"
+                />
+
                 {/* Corner decorations */}
                 <div className="absolute top-0 left-0 w-4 h-4 border-l-2 border-t-2 border-primary" />
                 <div className="absolute top-0 right-0 w-4 h-4 border-r-2 border-t-2 border-primary" />

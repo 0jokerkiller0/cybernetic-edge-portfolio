@@ -28,7 +28,7 @@ const Navbar = () => {
           onClick={() => handleScroll("home")}
           className="cursor-pointer font-mono text-xl font-bold text-primary"
         >
-          &lt;Sushant /&gt;
+          Sushant Telrandhe
         </a>
 
         {/* Desktop Nav */}
