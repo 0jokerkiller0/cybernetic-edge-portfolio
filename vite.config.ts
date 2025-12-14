@@ -4,7 +4,7 @@ import path from "path";
 import { defineConfig } from "vite";
 
 export default defineConfig(({ mode }) => ({
-  base: "/", // keeps paths relative
+  base: "./", // ✅ relative paths for static deployment
 
   server: {
     host: "::",
@@ -22,6 +22,6 @@ export default defineConfig(({ mode }) => ({
   },
 
   build: {
-    outDir: "docs",
+    outDir: "docs", // ✅ output folder for static deployment
   },
 }));
