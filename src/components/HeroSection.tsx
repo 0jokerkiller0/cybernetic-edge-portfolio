@@ -40,16 +40,29 @@ const HeroSection = () => {
                 asChild
                 className="bg-primary text-primary-foreground hover:bg-primary/90 font-mono animate-glow-pulse"
               >
-                <a href="#projects">
+                <button
+                  onClick={() => {
+                    const target = document.getElementById("projects");
+                    if (target) target.scrollIntoView({ behavior: "smooth" });
+                  }}
+                >
                   View Portfolio <ArrowDown className="ml-2 h-4 w-4" />
-                </a>
+                </button>
               </Button>
+
               <Button
+                asChild
                 variant="outline"
                 className="border-primary/50 text-primary hover:bg-primary/10 font-mono hover-glow"
               >
-                <Download className="mr-2 h-4 w-4" />
-                Download Resume
+                <a
+                  href="https://drive.google.com/file/d/1Y7-sQwVRAqN4kJo7QtVsbyx1j3zXWjcD/view"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Download className="mr-2 h-4 w-4" />
+                  Download Resume
+                </a>
               </Button>
             </div>
 
@@ -61,7 +74,10 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className="relative flex justify-center" style={{ animationDelay: "0.2s" }}>
+          <div
+            className="relative flex justify-center"
+            style={{ animationDelay: "0.2s" }}
+          >
             {/* Profile image frame */}
             <div className="relative">
               <div className="w-72 h-72 md:w-80 md:h-80 rounded-lg border-glow overflow-hidden bg-muted relative">
@@ -69,7 +85,9 @@ const HeroSection = () => {
                 <div className="w-full h-full bg-gradient-to-br from-muted to-background flex items-center justify-center">
                   <div className="text-center space-y-2">
                     <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-primary/30 to-accent/30 flex items-center justify-center">
-                      <span className="font-mono text-4xl text-primary">ST</span>
+                      <span className="font-mono text-4xl text-primary">
+                        ST
+                      </span>
                     </div>
                   </div>
                 </div>
